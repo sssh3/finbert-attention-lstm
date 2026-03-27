@@ -1,0 +1,54 @@
+# ── Course materials (not project code) ──────────────────────────────────────
+guide/
+
+# ── Data — raw inputs ─────────────────────────────────────────────────────────
+# Kaggle Benzinga file must be placed here manually before running the pipeline
+data/raw/news/
+# Price CSVs are re-downloaded by the pipeline via yfinance
+data/raw/prices/
+
+# ── Data — generated artifacts ───────────────────────────────────────────────
+data/processed/
+data/splits/
+
+# ── Results — generated predictions (binary, reproducible) ───────────────────
+results/predictions/
+
+# ── Optuna ────────────────────────────────────────────────────────────────────
+optuna_studies.db
+
+# ── Figures source files ──────────────────────────────────────────────────────
+figures/fig2_architecture.pptx
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+
+# ── LaTeX build artifacts ─────────────────────────────────────────────────────
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+report/COMP0162_coursework.pdf
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+
+# ── Reports ─────────────────────────
+report/
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+.env
+checkpoints/

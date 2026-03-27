@@ -1,0 +1,28 @@
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # Data
+  - pandas=2.2
+  - numpy=1.26
+  - pyarrow
+  - scikit-learn
+  # Deep learning — MPS (Apple Silicon) accelerated; >=2.6 required for transformers CVE fix
+  # Swap cpuonly → pytorch-cuda=12.1 if on Linux/Windows with GPU
+  - pytorch::pytorch>=2.6
+  - pytorch::cpuonly
+  # Plotting & notebooks
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - ipykernel
+  - tqdm
+  # pip-only packages
+  - pip:
+    - yfinance
+    - transformers
+    - sentencepiece
+    - optuna
